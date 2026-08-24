@@ -27,12 +27,23 @@ From a terminal in the repository root:
 ```powershell
 cd Backend
 python -m venv .venv
+# If PowerShell blocks Activate.ps1, allow scripts only in this terminal:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 Copy-Item .env.example .env
 # Edit Backend/.env and add your OpenRouter API key.
 python manage.py migrate
 python manage.py runserver 127.0.0.1:8000
+```
+
+Alternatively, skip activation and use the environment directly:
+
+```powershell
+cd Backend
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe manage.py migrate
+.\.venv\Scripts\python.exe manage.py runserver 127.0.0.1:8000
 ```
 
 The backend runs at http://127.0.0.1:8000.
