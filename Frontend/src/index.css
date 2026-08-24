@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.card-shadow {
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.badge-priority-high {
+  background-color: #dc3545;
+}
+
+.badge-priority-medium {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-priority-low {
+  background-color: #198754;
+}
